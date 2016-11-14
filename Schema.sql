@@ -1,7 +1,6 @@
-#comment ys
-
 create database Project;
-
+# Ivan was here
+#comment ys
 CREATE TABLE book (
   isbn10 CHAR(10) PRIMARY KEY,
   title VARCHAR(256) NOT NULL,
@@ -60,3 +59,4 @@ CREATE TABLE order(
   PRIMARY KEY (login_name, isbn10, oid),
 );
 #drop table book;
+>>>>>>> bf7426c84a201c3cd4d9864fc8bc2267be823789
