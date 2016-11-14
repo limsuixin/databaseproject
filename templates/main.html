@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href='/static/mainstyle.css' />
+<body>
+
+{% with messages = get_flashed_messages()%}
+	{% if messages %}
+		<script>
+		  var messages = {{ messages | safe }};
+		  for (var i=0; i<messages.length; i++) {
+			alert(messages[i]);
+		  }
+		</script>
+	{% endif %}
+{% endwith %}
+	  
+<span class = "header-container">
+
+	<span class ="header-logo">
+		<img src="/static/b&n.png" />
+	</span>
+	<span class="header-search">
+		<span class="header-searchbox">
+			<input type="text" name="search" id="search">
+			<br>
+			<h1 class="header-link" onclick="location.href='/search'">Advanced search</h1>
+		</span>
+		<span class="header-searchicon">
+			<input type="image"src="/static/search icon.png" onclick="alert('Hello')">
+
+		</span>
+		
+	</span>
+	
+	<span class ="header-login">
+		<span><form method="POST" action="/">
+			Username <br>
+			<input type="text" name="username" id="username"> <br>
+			Password <br>
+			<input type ="text" name="password" id ="password">
+			<br>
+			<input type="submit" name="button" value="Sign up">
+			<input type="submit" name="button" value="Login" onclick="goToPage();">
+
+		</form></span>
+	</span>
+</span>
+
+<div class="line">
+</div>
+<p>
+<span class="body-container" >
+	<div class="main_left">		
+	</div>
+	<div class="main_right">
+		<div><h2 class="order-list">Order Summary </h2><p>
+		<span class="firstlabel">Quantiy </span><span class="firstlabel"> {current amount}</span><p>
+		<span class="secondlabel">Fee </span><span class="secondlabel"> {rental fee}</span><p>			<input class="checkout" type="submit" value="Checkout">
+		</div>
+			
+		<p>
+	</div>
+</span>
+<script>
+function goToPage(){
+	var page = document.getElementById('username').value;
+	window.location = "http://127.0.0.1:5000/"+ page;
+}
+</script>
+</body>
+
+
+</html>
