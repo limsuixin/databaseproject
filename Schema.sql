@@ -1,3 +1,5 @@
+#comment ys
+
 create database Project;
 
 CREATE TABLE book (
