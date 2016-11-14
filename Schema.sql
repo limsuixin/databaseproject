@@ -1,5 +1,7 @@
 create database Project;
+
 # Ivan was here
+# Ivan left the conversation
 
 CREATE TABLE book (
   isbn10 CHAR(10) PRIMARY KEY,
