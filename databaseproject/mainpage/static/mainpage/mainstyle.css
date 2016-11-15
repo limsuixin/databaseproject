@@ -47,7 +47,7 @@ body {
 }
 .header-search{
 	border: 2px  solid #727b84;
-	border-radius: 5px;
+
 	
 	width: 60%;
 	height: 20%;
@@ -56,15 +56,14 @@ body {
 	top:60%;
 	position: absolute;
 	float: left;
+	display:inline-block;
 	
 }
 .header-searchicon{
 	position:absolute;
-	width:20%;
-	height:20%;
-	display: block;
-	top:40%;
-
+	left:50%;
+	top:60%;
+	display: inline-block;
 }
 
 /*login/signin form */
