@@ -8,6 +8,10 @@ body {
 	float: left;
 }
 
+.inline-block{
+	display: inline-block;
+	float: left;
+}
 
 
 /* header of website */
@@ -63,6 +67,8 @@ body {
 	position:absolute;
 	left:50%;
 	top:60%;
+	max-width:50%;
+	max-height:50%;
 	display: inline-block;
 }
 
@@ -70,11 +76,13 @@ body {
 .form-block{
 	height:100%;
 	width:10%;
+	
 	display: inline-block;
 	position:relative;
 }
 
 .form{
+	
 	max-width: 50%;
 	max-height: 50% ;
 	position:absolute;
