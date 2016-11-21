@@ -1,0 +1,61 @@
+body {
+    background: #f4f3ee;
+	color: #727b84;
+}
+
+
+.box{
+	background: #D9E2E1;
+	height: 300px;
+	width: 400px;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	position: absolute;
+	margin:auto;
+	border-radius: 7px;
+}
+
+h1{
+	font-family: Tahoma;
+	font-size: 20pt;
+	padding-left:5px;
+}
+
+
+
+
+
+.form{
+	font-size:15pt;
+	
+}
+
+.firstlabel{
+	padding-right:50px;
+}
+
+
+.secondlabel{
+	padding-right:68px;
+}
+
+
+
+.thirdlabel{
+	padding-right:31px;
+}
+
+
+.fourthlabel{
+	padding-right:47px;
+}
+.submit{
+	width: 100px;
+	height: 30px;
+	font-size: 10pt;
+}
+
+
+

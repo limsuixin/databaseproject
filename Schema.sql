@@ -1,6 +1,12 @@
-create database Project;
+create database bookstoredb;
+USE bookstoredb;
 # Ivan was here
+<<<<<<< HEAD
 #comment ys
+=======
+# Ivan left the conversation
+
+>>>>>>> dbefc987a1b792496a6bb136d6d4eafa2eb8af64
 CREATE TABLE book (
   isbn10 CHAR(10) PRIMARY KEY,
   title VARCHAR(256) NOT NULL,
@@ -48,15 +54,15 @@ CREATE TABLE usefulness_rating(
 CREATE TABLE order_history(
   oid INT(6),
   order_date DATE,
-  order_status VARCHAR(256),
+  order_status VARCHAR(256)
 );
 
-CREATE TABLE order(
-  login_name VARCHAR(10)
+CREATE TABLE ordering(
+  login_name VARCHAR(10),
   isbn10 CHAR(10),
   oid INT(6),
   quantity INT not null check(quantity>0),
-  PRIMARY KEY (login_name, isbn10, oid),
+  PRIMARY KEY (login_name, isbn10, oid)
 );
 #drop table book;
 >>>>>>> bf7426c84a201c3cd4d9864fc8bc2267be823789

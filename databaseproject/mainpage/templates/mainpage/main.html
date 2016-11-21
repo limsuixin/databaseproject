@@ -1,0 +1,45 @@
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'mainpage/mainstyle.css' %}" />
+
+<html>
+
+<body>
+
+<div class="header">
+	<span class="logo-block">
+		<img class = "header-logo" src="{% static 'mainpage/b&n.png' %}" alt="logo"/>
+	</span>
+	
+	<span class="search-block">
+		<span class="block"> 
+			<input class="header-search" type="text" name="search">
+			<br>
+		</span> 
+		<span class="block"> 
+			<input class="header-search" type="text" name="search">
+			<br>
+		</span> 
+		
+		<span class="block">
+			<img class="header-searchicon" src="{% static 'mainpage/search icon.png' %}" alt="searchicon"/>
+		</span>
+	</span>
+	
+	<span class="form-block">
+		<form class="form" style="padding-left: 100px ">
+			Username <br>
+			<input type="text" >
+			<br>
+			Password<br>
+			<input type="text"><p>
+			<input type="submit" value="login"> <input type="submit" value="login"> 
+		</form>
+	</span>
+
+</div>
+</body>
+
+
+</html>
