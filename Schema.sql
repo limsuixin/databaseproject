@@ -1,5 +1,5 @@
-create database Project;
-
+create database bookstoredb;
+USE bookstoredb;
 # Ivan was here
 # Ivan left the conversation
 
@@ -50,14 +50,14 @@ CREATE TABLE usefulness_rating(
 CREATE TABLE order_history(
   oid INT(6),
   order_date DATE,
-  order_status VARCHAR(256),
+  order_status VARCHAR(256)
 );
 
-CREATE TABLE order(
-  login_name VARCHAR(10)
+CREATE TABLE ordering(
+  login_name VARCHAR(10),
   isbn10 CHAR(10),
   oid INT(6),
   quantity INT not null check(quantity>0),
-  PRIMARY KEY (login_name, isbn10, oid),
+  PRIMARY KEY (login_name, isbn10, oid)
 );
 #drop table book;
