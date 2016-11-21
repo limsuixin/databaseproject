@@ -50,14 +50,25 @@ CREATE TABLE usefulness_rating(
 CREATE TABLE order_history(
   oid INT(6),
   order_date DATE,
-  order_status VARCHAR(256)
+  order_status VARCHAR(256),
+  PRIMARY KEY (oid)
 );
 
 CREATE TABLE ordering(
   login_name VARCHAR(10),
-  isbn10 CHAR(10),
   oid INT(6),
-  quantity INT not null check(quantity>0),
-  PRIMARY KEY (login_name, isbn10, oid)
+  PRIMARY KEY (login_name, oid),
+  FOREIGN KEY (login_name) REFERENCES customer(login_name),
+  FOREIGN KEY (oid) REFERENCES order_history(oid)
 );
+
+CREATE TABLE books_ordered(
+  oid INT(6),
+  isbn10 CHAR(10),
+  quantity INT not null check(quantity>0),
+  PRIMARY KEY (oid,isbn10),
+  FOREIGN KEY (isbn10) REFERENCES book(isbn10),
+  FOREIGN KEY (oid) REFERENCES order_history(oid)
+);
+  
 #drop table book;
