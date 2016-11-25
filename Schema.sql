@@ -1,12 +1,6 @@
 create database bookstoredb;
 USE bookstoredb;
-# Ivan was here
-<<<<<<< HEAD
-#comment ys
-=======
-# Ivan left the conversation
 
->>>>>>> dbefc987a1b792496a6bb136d6d4eafa2eb8af64
 CREATE TABLE book (
   isbn10 CHAR(10) PRIMARY KEY,
   title VARCHAR(256) NOT NULL,
@@ -22,10 +16,15 @@ CREATE TABLE customer(
   login_name VARCHAR(10) PRIMARY KEY,
   full_name VARCHAR(64),
   password VARCHAR(16),
-  credit_card INT(16),
+  credit_card VARCHAR(16),
   address VARCHAR(256),
   phone INT(8)
 );
+
+#####################################################
+## Run this line
+ALTER TABLE customer MODIFY credit_card VARCHAR(16); 
+#####################################################
 
 CREATE TABLE feedback(
   entry_date DATE,
@@ -74,6 +73,3 @@ CREATE TABLE books_ordered(
   FOREIGN KEY (isbn10) REFERENCES book(isbn10),
   FOREIGN KEY (oid) REFERENCES order_history(oid)
 );
-  
-#drop table book;
->>>>>>> bf7426c84a201c3cd4d9864fc8bc2267be823789

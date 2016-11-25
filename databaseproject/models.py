@@ -62,7 +62,7 @@ class Customer(models.Model):
     login_name = models.CharField(primary_key=True, max_length=10)
     full_name = models.CharField(max_length=64, blank=True, null=True)
     password = models.CharField(max_length=16, blank=True, null=True)
-    credit_card = models.IntegerField(blank=True, null=True)
+    credit_card = models.CharField(max_length=16, blank=True, null=True)
     address = models.CharField(max_length=256, blank=True, null=True)
     phone = models.IntegerField(blank=True, null=True)
 
