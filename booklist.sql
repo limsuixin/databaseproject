@@ -69,7 +69,6 @@ insert into book values ('0495011606','Calculus (Stewart s Calculus Series)','Ja
 insert into book values ('0471793035','Functions Modeling Change: A Preparation for Calculus','Eric Connally','Wiley','2006','64','paperback','Maths');
 insert into book values ('0495014281','Essential Calculus: Early Transcendentals','James Stewart','Brooks Cole','2006','12','hardcover','Maths');
 insert into book values ('0072965339','Beginning and Intermediate Algebra','Julie Miller','McGraw-Hill','2004','16','hardcover','Maths');
-insert into book values ('0716704749','The Developing Person Through Childhood and Adolescence & Media Tool Kit','Kathleen Stassen Berger','Worth Publishers','2003','550','hardcover','Maths');
 insert into book values ('020153181X','Student Study Guide Part 1 for Calculus','George B. Thomas','Addison Wesley','1995','20','paperback','Maths');
 insert into book values ('0716711869','The Fractal Geometry of Nature','Benoit B. Mandelbrot','Times Books','1983','48','hardcover','Maths');
 insert into book values ('0486663523','Introduction to Topology: Third Edition','Bert Mendelson','Dover Publications','1990','24','paperback','Maths');
