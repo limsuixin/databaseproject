@@ -6,7 +6,6 @@
 insert into book values ('1449389678','Photoshop Elements 9: The Missing Manual','Barbara Brundage','Pogue Press','2010','60','paperback','Computer Science');
 insert into book values ('1594487715','Where Good Ideas Come From: The Natural History of Innovation','Steven Johnson','Riverhead Hardcover','2010','36','hardcover','Computer Science');
 insert into book values ('032147404X','The Digital Photography Book','Scott Kelby','Peachpit Press','2006','19','paperback','Computer Science');
-insert into book values ('0684801523','The Great Gatsby','F. Scott Fitzgerald','Scribner','1995','16','hardcover','Computer Science');
 insert into book values ('0393072223','The Shallows: What the Internet Is Doing to Our Brains','Nicholas Carr','W. W. Norton & Company ','2010','26','hardcover','Computer Science');
 insert into book values ('0470523980','Windows 7 For Dummies Book + DVD Bundle','Andy Rathbone','For Dummies','2009','48','paperback','Computer Science');
 insert into book values ('032144146X','Data Structures and Algorithm Analysis in C++ (3rd Edition)','Mark A. Weiss','Addison Wesley','2006','86','hardcover','Computer Science');
